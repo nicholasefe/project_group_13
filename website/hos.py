@@ -12,7 +12,8 @@ def about():
 
 @hos.route("/data")
 def data():
-    return render_template("data.html")
+    students = ["Efe", "Okoh", "0857500"]
+    return render_template("data.html", students=students)
 
 if __name__=="__main__":
     hos.run(debug=True)
