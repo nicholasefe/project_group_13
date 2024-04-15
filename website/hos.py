@@ -21,7 +21,7 @@ def about():
 def data():
     con = sqlite3.connect(db_path)
     cursor = con.cursor()
-    lst = cursor.execute('SELECT * FROM hospital_table Limit 30').fetchall()
+    lst = cursor.execute('SELECT * FROM hospital_table Limit 5').fetchall()
     con.close()
     
     # for title
